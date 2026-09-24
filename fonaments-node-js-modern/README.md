@@ -4,16 +4,17 @@ Inventari i préstecs de material de l'aula. Bloc 1 · Sense IA.
 
 ## Posada en marxa
 
-1. Descomprimeix aquest fitxer a la carpeta del curs (`node-curs/`), al costat de `fonaments-node/`. Es crearà la carpeta `fonaments-node-js-modern/`.
+1. Descomprimeix aquest fitxer a l'arrel del teu repositori del curs (`node-curs/`), al costat de `sessio1/` i `fonaments-node/`. Es crearà la carpeta `fonaments-node-js-modern/`.
 2. Comprova que tens aquesta estructura:
 
 ```
-node-curs/
+node-curs/                     ← el teu repositori (Activitat 1)
+├── .gitignore
+├── sessio1/
 ├── fonaments-node/            ← Activitat 1
 └── fonaments-node-js-modern/  ← Activitat 2
     ├── README.md
     ├── package.json
-    ├── .gitignore
     ├── antic.js
     ├── punt-control-3.md
     └── data/
@@ -21,12 +22,12 @@ node-curs/
         └── material.original.json
 ```
 
-3. Obre la carpeta a VS Code i, al terminal integrat, crea el repositori:
+3. Obre la carpeta a VS Code i, al terminal integrat, desa el punt de partida. **No facis `git init`**: el repositori ja existeix des de l'Activitat 1.
 
 ```
-git init
 git add .
 git commit -m "Activitat 2 · Punt de partida"
+git push
 ```
 
 4. Executa-ho tot des de l'arrel de `fonaments-node-js-modern/`:
@@ -60,7 +61,7 @@ cp data/material.original.json data/material.json
 
 ## Exercicis
 
-Tots els fitxers es creen a l'arrel de `fonaments-node-js-modern/`. Un commit per pas.
+Tots els fitxers es creen a l'arrel de `fonaments-node-js-modern/`. Un commit per pas, i `git push` després de cada commit.
 
 | Pas | Fitxers que has de crear |
 |---|---|
@@ -91,19 +92,18 @@ Es valoren aquests aspectes (els detalls són a l'última diapositiva de l'activ
 
 ## Lliurament
 
-1. A GitHub, crea un repositori **privat** i buit (sense README ni .gitignore) anomenat `fonaments-node-js-modern`.
-2. Connecta'l i puja-hi els commits (canvia `<usuari>` pel teu usuari de GitHub):
+1. Lliures al **mateix repositori de GitHub de l'Activitat 1**: no n'has de crear cap de nou ni tornar a fer `git remote add`. Ja està compartit amb `jpala4-ieti`.
+2. Després de cada commit, puja'l:
 
 ```
-git remote add origin https://github.com/<usuari>/fonaments-node-js-modern.git
-git branch -M main
-git push -u origin main
+git push
 ```
 
-3. Comparteix-lo: **Settings → Collaborators → Add people** i afegeix l'usuari `jpala4-ieti`.
-4. Envia la **URL del repositori** com a resposta a la tasca.
+3. Abans de l'últim push, restaura `material.json` i comprova `git log --oneline`.
+4. A GitHub, `fonaments-node-js-modern/` ha d'aparèixer al costat de `sessio1/` i `fonaments-node/`.
+5. Envia la **URL del repositori** com a resposta a la tasca.
 
-Abans de l'últim push, restaura `material.json`. Després de cada commit nou, n'hi ha prou amb `git push`.
+Si `git push` diu que no hi ha cap remot, comprova amb `git remote -v` que hi surt l'origin de l'Activitat 1. Si no hi surt, has descomprimit el zip fora del repositori.
 
 ## Normes
 
