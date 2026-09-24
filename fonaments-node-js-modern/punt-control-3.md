@@ -6,16 +6,14 @@ Escriu què mostra cada línia **sense executar res**. Després comprova-ho amb 
 const m = { nom: "HP 14", valor: 0 };
 ```
 
-| # | Línia | Què mostra? | Encertat? |
-|---|---|---|---|
-| 1 | `console.log(0 ?? 5);` | | |
-| 2 | `console.log(0 \|\| 5);` | | |
-| 3 | `console.log("" ?? "buit");` | | |
-| 4 | `console.log("" \|\| "buit");` | | |
-| 5 | `console.log(m.valor \|\| "sense valor");` | | |
-| 6 | `console.log(m.valor ?? "sense valor");` | | |
-| 7 | `console.log(m.prestatA?.toUpperCase());` | | |
-| 8 | `console.log(m.prestatA?.toUpperCase() ?? "a l'aula");` | | |
+1. console.log(0 ?? 5);                                   → Mostra: ________  Encertat: ___
+2. console.log(0 || 5);                                   → Mostra: ________  Encertat: ___
+3. console.log("" ?? "buit");                             → Mostra: ________  Encertat: ___
+4. console.log("" || "buit");                             → Mostra: ________  Encertat: ___
+5. console.log(m.valor || "sense valor");                 → Mostra: ________  Encertat: ___
+6. console.log(m.valor ?? "sense valor");                 → Mostra: ________  Encertat: ___
+7. console.log(m.prestatA?.toUpperCase());                → Mostra: ________  Encertat: ___
+8. console.log(m.prestatA?.toUpperCase() ?? "a l'aula");  → Mostra: ________  Encertat: ___
 
 ## Per pensar
 
