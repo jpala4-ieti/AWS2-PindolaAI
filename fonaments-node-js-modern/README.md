@@ -74,25 +74,39 @@ Tots els fitxers es creen a l'arrel de `fonaments-node-js-modern/`. Un commit pe
 | Repte final (opcional) | `inventari.js`, `material.test.js` |
 | Ampliació | carpeta `ampliacio/` |
 
-El recorregut mínim és del Pas 0 al Pas 6. El que està marcat com a opcional suma punts extra.
+El recorregut mínim és del Pas 0 al Pas 6. El que està marcat com a opcional es valora com a extra.
 
 El `package.json` ja té l'script de tests: `npm test` executa tots els fitxers `*.test.js`.
 
 ## Avaluació
 
-| Criteri | Punts |
-|---|---|
-| Funcionament (Pas 0 a Pas 6) | 3 |
-| JavaScript modern | 3 |
-| Validacions i errors | 1,5 |
-| Mòdul `material.js` | 1,5 |
-| Git i lliurament | 1 |
-| Extra: repte `inventari.js` (+0,5) i tests que passen (+0,5) | fins a +1 |
+Es valoren aquests aspectes (els detalls són a l'última diapositiva de l'activitat):
 
-Lliurament: un `.zip` de `fonaments-node-js-modern/` amb la carpeta `.git` i sense `node_modules/`.
+- Funcionament dels scripts del Pas 0 al Pas 6
+- Ús del JavaScript modern
+- Validacions i errors
+- El mòdul `material.js`
+- Git i lliurament
+- Extra (opcional): repte `inventari.js`, tests i exercicis d'ampliació
+
+## Lliurament
+
+1. A GitHub, crea un repositori **privat** i buit (sense README ni .gitignore) anomenat `fonaments-node-js-modern`.
+2. Connecta'l i puja-hi els commits (canvia `<usuari>` pel teu usuari de GitHub):
+
+```
+git remote add origin https://github.com/<usuari>/fonaments-node-js-modern.git
+git branch -M main
+git push -u origin main
+```
+
+3. Comparteix-lo: **Settings → Collaborators → Add people** i afegeix l'usuari `jpala4-ieti`.
+4. Envia la **URL del repositori** com a resposta a la tasca.
+
+Abans de l'últim push, restaura `material.json`. Després de cada commit nou, n'hi ha prou amb `git push`.
 
 ## Normes
 
 - Tot a mà: pots consultar nodejs.org/docs i developer.mozilla.org, però **sense IA**.
 - Cap script ha de petar sense arguments: sempre un missatge d'ús.
-- Abans de lliurar, restaura `material.json`.
+- Abans de l'últim push, restaura `material.json`.
