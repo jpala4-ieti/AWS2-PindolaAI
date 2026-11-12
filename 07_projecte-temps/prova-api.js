@@ -1,5 +1,5 @@
 // Ve fet · Comprova la teva API. Engega-la abans amb npm start (en un altre terminal).
-const API = process.env.API ?? "http://localhost:3000";
+const API = process.env.API_URL ?? "http://localhost:3000";
 
 const PROVES = [
   { ruta: "/temps/Barcelona", estat: 200 },
